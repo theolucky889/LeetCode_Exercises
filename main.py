@@ -1,5 +1,5 @@
-from Easy.Height_Checker import Height_Checker  # import the height checker function from height checker file
-from Medium.Permutations import Permutations    # import permutation function from permutation file
+from Easy.Height_Checker import Height_Checker  # import module the height checker function from height checker file
+from Medium.Permutations import Permutations    # import module permutation function from permutation file
 
 def main():
     # method to callout the function so it will be called later in the loop
@@ -27,5 +27,5 @@ def main():
         print('Permutation Results: ', perm.permute(nums))
 
 # run the main file
-if __name__ == '__main__':
+if __name__ == '__main__':  # this function is used so that only the main file will be run also to make distinctions between files
     main()
