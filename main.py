@@ -17,8 +17,8 @@ def main():
         [0,1],
         [1]
     ]
-    for nums in nums_list
-    print('Permutation Results: ', perm.solve(nums))
+    for nums in nums_list:
+        print('Permutation Results: ', perm.solve(nums))
 
 if __name__ == '__main__':
     main()
