@@ -28,7 +28,7 @@ Constraints:
 All the integers of nums are unique.
 '''
 # define a class named 'Solution' that will contain our method
-class Solution(object):
+class Permutations(object):
     # define a method named 'permit' that takes a list of integers 'nums'
     def permute(self, nums):
         """

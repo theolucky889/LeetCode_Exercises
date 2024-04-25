@@ -44,7 +44,7 @@ Constraints:
 1 <= heights[i] <= 100
 '''
 
-class Solution(object):
+class Height_Checker(object):
     def heightChecker(self, heights):
         """
         :type heights: List[int]
