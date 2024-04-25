@@ -55,9 +55,4 @@ class Solution(object):
         backtrack()     # call to the backtrack function
         return results
     
-# call out class Solution for output
-solution = Solution()
-print(solution.permute([1,2,3]))
-print(solution.permute([0,1]))
-print(solution.permute([1]))
 
