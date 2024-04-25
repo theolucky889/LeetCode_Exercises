@@ -49,7 +49,7 @@ class Solution(object):
                 nums[start], nums[i] = nums[i], nums[start]
                 # recurse on the next part of the array 
                 backtrack(start + 1)
-                # swap to backtrack
+                # swap to original position for backtrack (ensure no duplicates)
                 nums[start], nums[i] = nums[i], nums[start]
         
         backtrack()     # call to the backtrack function
