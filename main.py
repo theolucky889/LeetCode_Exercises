@@ -27,5 +27,5 @@ def main():
         print('Permutation Results: ', perm.permute(nums))
 
 # run the main file
-if __name__ == '__main__':  # this function is used so that only the main file will be run also to make distinctions between files
+if __name__ == '__main__':  # this function is used so that only in the main function will be run (not the modules + main())also to make distinctions between files
     main()
