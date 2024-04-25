@@ -34,4 +34,21 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        results = []    # will store all the permutation
         
+        def backtrack(start=0):
+            # if at the last element, append the permutation copy
+            if start == len(nums):
+                results.append(nums[:])
+                return
+        
+            for i in range(start, len(nums)):
+                # swap the current number with the start
+                nums[start], nums[i] = nums[i], nums[start]
+                # recurse on the next part of the array 
+                backtrack(start + 1)
+                # swap to backtrack
+                nums[start], nums[i] = nums[i], nums[start]
+        
+        backtrack()     # call to the backtrack function
+        return results
