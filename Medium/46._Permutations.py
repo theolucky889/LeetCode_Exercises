@@ -27,8 +27,9 @@ Constraints:
 -10 <= nums[i] <= 10
 All the integers of nums are unique.
 '''
-
+# define a class named 'Solution' that will contain our method
 class Solution(object):
+    # define a method named 'permit' that takes a list of integers 'nums'
     def permute(self, nums):
         """
         :type nums: List[int]
@@ -36,12 +37,13 @@ class Solution(object):
         """
         results = []    # will store all the permutation
         
-        def backtrack(start=0):
+        # helper function for backtracking
+        def backtrack(start=0): # nested function inside 'permute' 
             # if at the last element, append the permutation copy
-            if start == len(nums):
-                results.append(nums[:])
+            if start == len(nums):  # to check if the start index has reached the length of nums, if true, complete the permutation
+                results.append(nums[:]) # append the permutation into the result list
                 return
-        
+            # loop through the arrays to swap each element to the next
             for i in range(start, len(nums)):
                 # swap the current number with the start
                 nums[start], nums[i] = nums[i], nums[start]
@@ -52,3 +54,10 @@ class Solution(object):
         
         backtrack()     # call to the backtrack function
         return results
+    
+# call out class Solution for output
+solution = Solution()
+print(solution.permute([1,2,3]))
+print(solution.permute([0,1]))
+print(solution.permute([1]))
+
