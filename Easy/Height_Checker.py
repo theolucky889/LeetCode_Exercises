@@ -45,6 +45,7 @@ Constraints:
 '''
 
 class Height_Checker(object):
+    # define a method named 'heightChecker' that takes a list called heights
     def heightChecker(self, heights):
         """
         :type heights: List[int]
