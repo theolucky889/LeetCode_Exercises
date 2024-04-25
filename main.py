@@ -9,7 +9,7 @@ def main():
         [1,2,3,4,5]
     ]
     for heights in height_list:
-        print('Height Checker Results:', hc.solve(heights))
+        print('Height Checker Results:', hc.heightChecker(heights))
 
     perm = Permutations()
     nums_list = [
@@ -18,7 +18,7 @@ def main():
         [1]
     ]
     for nums in nums_list:
-        print('Permutation Results: ', perm.solve(nums))
+        print('Permutation Results: ', perm.permute(nums))
 
 if __name__ == '__main__':
     main()
