@@ -27,20 +27,17 @@ Constraints:
 -10 <= nums[i] <= 10
 All the integers of nums are unique.
 '''
-# define a class named 'Solution' that will contain our method
+# define a class named 'Permutations' that will contain our method
 class Permutations(object):
     # define a method named 'permit' that takes a list of integers 'nums'
     def permute(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         results = []    # will store all the permutation
         
-        # helper function for backtracking
-        def backtrack(start=0): # nested function inside 'permute' 
+        # helper function for backtracking algorithm for permutation
+        def backtrack(start=0):
             # if at the last element, append the permutation copy
-            if start == len(nums):  # to check if the start index has reached the length of nums, if true, complete the permutation
+            if start == len(nums): 
                 results.append(nums[:]) # append the permutation into the result list
                 return
             # loop through the arrays to swap each element to the next
