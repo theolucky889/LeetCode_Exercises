@@ -8,7 +8,7 @@ def main():
     height_list = [     
         [1,1,4,2,1,3], 
         [5,1,2,3,4], 
-        [1,2,3,4,5]
+        [1,2,3,4,5],
     ]
     # loop the lists and print the result
     for heights in height_list:
