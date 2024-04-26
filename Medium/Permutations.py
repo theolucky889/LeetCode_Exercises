@@ -44,7 +44,7 @@ class Permutations(object):
             for i in range(start, len(nums)):
                 # swap the current number with the start
                 nums[start], nums[i] = nums[i], nums[start]
-                # recurse on the next part of the array 
+                # recurse the next part of the array 
                 backtrack(start + 1)
                 # swap to original position for backtrack (ensure no duplicates)
                 nums[start], nums[i] = nums[i], nums[start]
