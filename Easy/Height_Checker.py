@@ -47,10 +47,6 @@ Constraints:
 class Height_Checker(object):
     # define a method named 'heightChecker' that takes a list called heights
     def heightChecker(self, heights):
-        """
-        :type heights: List[int]
-        :rtype: int
-        """
         # create the sorted heights to later be compared
         expected = sorted(heights)
         # returns the total of number of position where heights(h1) is not equal to expected(h2)
