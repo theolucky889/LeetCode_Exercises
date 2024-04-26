@@ -11,8 +11,9 @@ def main():
         [1,2,3,4,5],
     ]
     # loop the lists and print the result
+    print('Height Checker Results:')
     for heights in height_list:
-        print('Height Checker Results:', hc.heightChecker(heights))
+       print(hc.heightChecker(heights))
 
     # method to callout the function so it will be called later in the loop
     perm = Permutations()
@@ -23,8 +24,9 @@ def main():
         [1]
     ]
     # loop the list and print the result
+    print('Permutation Results: ') 
     for nums in nums_list:
-        print('Permutation Results: ', perm.permute(nums))
+        print(perm.permute(nums))
 
 # run the main file
 if __name__ == '__main__':  # this function is used so that only in the main function will be run (not the modules + main())also to make distinctions between files
