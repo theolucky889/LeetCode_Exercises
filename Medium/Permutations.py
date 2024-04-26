@@ -29,7 +29,7 @@ All the integers of nums are unique.
 '''
 # define a class named 'Permutations' that will contain our method
 class Permutations(object):
-    # define a method named 'permit' that takes a list of integers 'nums'
+    # define a method named 'permute' that takes a list of integers 'nums'
     def permute(self, nums):
 
         results = []    # will store all the permutation
