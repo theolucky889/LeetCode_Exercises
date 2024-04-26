@@ -50,5 +50,6 @@ class Height_Checker(object):
         # create the sorted heights to later be compared
         expected = sorted(heights)
         # returns the total of number of position where heights(h1) is not equal to expected(h2)
-        return sum(h1 != h2 for h1, h2 in zip(heights, expected))   # zip() = create pairs of heights and expected heights to compare
+        height_check = sum(h1 != h2 for h1, h2 in zip(heights, expected))   # zip() = create pairs of heights and expected heights to compare
+        return height_check
 
