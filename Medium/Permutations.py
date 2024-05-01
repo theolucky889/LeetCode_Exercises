@@ -45,6 +45,7 @@ class Permutations(object):
                 backtrack(start + 1)
                 # swap to original position for backtrack (ensure no duplicates)
                 nums[start], nums[i] = nums[i], nums[start]
+                
         results = []    # will store all the permutation
         backtrack()     # call to the backtrack function
         return results
