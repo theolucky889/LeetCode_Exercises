@@ -31,9 +31,6 @@ All the integers of nums are unique.
 class Permutations(object):
     # define a method named 'permute' that takes a list of integers 'nums'
     def permute(self, nums):
-
-        results = []    # will store all the permutation
-        
         # helper function for backtracking algorithm for permutation
         def backtrack(start=0):
             # if at the last element, append the permutation copy
@@ -48,7 +45,7 @@ class Permutations(object):
                 backtrack(start + 1)
                 # swap to original position for backtrack (ensure no duplicates)
                 nums[start], nums[i] = nums[i], nums[start]
-        
+        results = []    # will store all the permutation
         backtrack()     # call to the backtrack function
         return results
     
