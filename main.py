@@ -1,4 +1,5 @@
 from Easy.Height_Checker import Height_Checker  # import module the height checker function from height checker file
+from Easy.Two_Sum import TwoSum
 from Medium.Permutations import Permutations    # import module permutation function from permutation file
 from Medium.CombinationSum import CombSum
 from Hard.N_Queen import Queen
@@ -57,6 +58,18 @@ def main():
                 print(row)
             print('')
     
+    t_s = TwoSum()
+    nums = [
+        [2, 7, 11, 15],
+        [3, 2, 4],
+        [3, 3]
+    ]
+
+    target = [
+        9,
+        6,
+        6
+    ]
 # run the main file
 if __name__ == '__main__':  # this function is used so that only in the main function will be run (not the modules + main())also to make distinctions between files
     main()
