@@ -35,10 +35,10 @@ class TwoSum(object):
         :type target: int
         :rtype: List[int]
         """
-        num_index = {}
-        for index, num1 in enumerate(nums):
-            num2 = target - num1
-            if num2 in num_index:
+        num_index = {} # empty index
+        for index, num1 in enumerate(nums): # enumerate num1 to find the pair
+            num2 = target - num1   # num2 is to find the pair and will put in the index
+            if num2 in num_index:   # once the pair is found in the index, loop will stop and print the pair target
                 return[num_index[num2], index]
             num_index[num1] = index
 solution = TwoSum()
