@@ -5,6 +5,8 @@ from Medium.CombinationSum import CombSum
 from Hard.N_Queen import Queen
 
 def main():
+
+# Height Checker
     # method to callout the function so it will be called later in the loop
     hc = Height_Checker()
     # leetcode question   
@@ -31,6 +33,7 @@ def main():
     for nums in nums_list:
         print(perm.permute(nums))
 
+# Combination Sum
     combSum = CombSum()
     candidate_list = [
         [2,3,6,7],
@@ -44,6 +47,7 @@ def main():
         result = (combSum.combinationSum(candidates, target))
         print(result)
         
+# N Queen
     n_Queen = Queen()
     queens = [
         4,
@@ -57,7 +61,8 @@ def main():
             for row in solution:
                 print(row)
             print('')
-    
+
+# Two Sum
     t_s = TwoSum()
     nums = [
         [2, 7, 11, 15],
@@ -70,6 +75,10 @@ def main():
         6,
         6
     ]
+    print("Two Sum Combination: ")
+    solutions = t_s
+
+
 # run the main file
 if __name__ == '__main__':  # this function is used so that only in the main function will be run (not the modules + main())also to make distinctions between files
     main()
