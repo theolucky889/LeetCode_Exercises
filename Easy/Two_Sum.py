@@ -41,4 +41,3 @@ class TwoSum(object):
             if num2 in num_index:   # once the pair is found in the index, loop will stop and print the pair target
                 return[num_index[num2], index]
             num_index[num1] = index
-solution = TwoSum()
